@@ -30,12 +30,12 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
         // Detach LoggedOut RIB.
         if let loggedOut = self.loggedOut {
             detachChild(loggedOut)
-            viewController.dismiss(viewController: loggedOut.viewControllable)
+//            viewController.dismiss(viewController: loggedOut.viewControllable)
             self.loggedOut = nil
         }
 
-        let loggedIn = loggedInBuilder.build(withListener: interactor)
-        attachChild(loggedIn)
+//        let loggedIn = loggedInBuilder.build(withListener: interactor)
+//        attachChild(loggedIn)
     }
     
     init(interactor: RootInteractable,
